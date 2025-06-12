@@ -7,3 +7,6 @@ permalink: /studying/BST
 date: 2025-06-10
 # location: "City, Country"
 ---
+
+Binary Search Tree
+Requirement: (Linked list)
