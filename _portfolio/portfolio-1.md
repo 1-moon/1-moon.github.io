@@ -1,6 +1,6 @@
 ---
 title: "Nursing AI Assistant System"
-excerpt: "요양병원에서 사용되는 이동형 간호 로봇의 핵심 기능 개발<br/><img src='https://github.com/addinedu-ros-8th/ros-repo-1/blob/main/careGiver.gif'>"
+excerpt: "요양병원에서 사용되는 이동형 간호 로봇의 핵심 기능 개발<br/><img src='https://github.com/addinedu-ros-8th/ros-repo-1/blob/main/careGiver.gif' width='500' height='300'>"
 collection: portfolio
 ---
 
