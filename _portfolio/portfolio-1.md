@@ -26,8 +26,8 @@ link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tr
 
 #### 깊이 추정(Depth-estimation)
 
-#### 재 식별(Re-identificaiton)
 
 
-[영상 보기](https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/view?usp=drive_link)
+## 대화
+
 <iframe src="https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/preview" width="640" height="360" allow="autoplay"></iframe>
