@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Nursing AI Assistant System"
+excerpt: "요양병원에서 사용되는 이동형 간호 로봇의 핵심 기능 개발<br/>https://github.com/user-attachments/assets/dbaf59f4-1230-4a45-b7aa-616ddc4eaeaa"
 collection: portfolio
 ---
 
