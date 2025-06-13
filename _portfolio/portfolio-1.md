@@ -13,14 +13,8 @@ link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tr
 ## 산책(Walk) 
 <table>
   <tr>
-    <td width="50%">
-      <img src="https://github.com/user-attachments/assets/050bb257-d4b0-4d40-a96b-9316eebbc71d"><br>
-    </td>
-    <td width="50%">
-      <img src="https://github.com/user-attachments/assets/dbaf59f4-1230-4a45-b7aa-616ddc4eaeaa"><br>
-    </td>
-      <tr>
-    </td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/050bb257-d4b0-4d40-a96b-9316eebbc71d"><br></td>
+    <td width="50%"><img src="https://github.com/user-attachments/assets/dbaf59f4-1230-4a45-b7aa-616ddc4eaeaa"><br></td>
   </tr>
 </table>
 
@@ -30,4 +24,6 @@ link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tr
 
 ## 대화
 
-<iframe src="https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/preview" width="640" height="360" allow="autoplay"></iframe>
+<div align="center">
+  <iframe src="https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/preview" width="640" height="360" allow="autoplay"></iframe>
+</div>
