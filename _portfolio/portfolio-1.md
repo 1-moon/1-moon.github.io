@@ -10,7 +10,7 @@ link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tr
 본 프로젝트는 요양원을 배경으로, ROS2(Jazzy)를 활용한 주행로봇이 요양보호사의 업무를 어떻게 보조할 수 있는지를 탐구하는 것을 목적으로 진행되었습니다.
 제가 맡은 파트는 AI를 적극활용한 로봇의 기능구현 담당으로서, 어르신의 산책 보조와 순찰 및 정서적대화를 구현했습니다. 
 
-## 재활치료 - 산책(Rehabilitation - Walk) 
+## 산책(Walk) 
 <table>
   <tr>
     <td width="50%">
@@ -23,3 +23,10 @@ link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tr
     </td>
   </tr>
 </table>
+
+#### 깊이 추정(Depth-estimation)
+
+#### 재 식별(Re-identificaiton)
+
+
+[영상 보기](https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/view?usp=drive_link)
