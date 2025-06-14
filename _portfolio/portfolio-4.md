@@ -5,4 +5,4 @@ collection: portfolio
 ---
 
 
-<embed src="https://github.com/user-attachments/files/20738569/finalProject.pdf" width="800px" height="600px" />
+<embed src="../files/Diss-bacholer.pdf" width="800px" height="600px" />
