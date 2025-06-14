@@ -5,4 +5,4 @@ collection: portfolio
 ---
 
 
-<embed src="../files/Diss-bacholer.pdf" width="800px" height="600px" />
+<embed src="Diss-bacholer.pdf" width="800px" height="600px" />
