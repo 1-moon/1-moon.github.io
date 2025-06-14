@@ -4,4 +4,5 @@ excerpt: "레이트레이싱 환경속 베지어 커브 렌더링<br/><img src='
 collection: portfolio
 ---
 
-[finalProject.pdf](https://github.com/user-attachments/files/20738569/finalProject.pdf)
+
+<embed src="https://github.com/user-attachments/files/20738569/finalProject.pdf" width="800px" height="600px" />
