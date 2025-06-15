@@ -1,5 +1,5 @@
 ---
-title: "rBST"
+title: "rBST(재귀적 이진탐색트리)"
 collection: studying
 type: "Algorithm"
 permalink: /studying/rBST
