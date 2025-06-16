@@ -38,3 +38,8 @@ My goal is to become a developer who contantly lerans, experiments, and grows. \
 
 Let me know if you'd like any refinements, Thanks..! 
 
+Skills
+======
+- Language : Python, C/C++, C#
+- API/Framework: OpenGL, ROS, Qt
+- Tool: Unity
