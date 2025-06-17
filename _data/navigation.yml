@@ -21,15 +21,13 @@ main:
     url: /studying/    
   - title: "Talks"
     url: /talks/ 
-      
-
-#  - title: "Publications"
-#    url: /publications/
+  - title: "Publications"
+    url: /publications/
+  - title: "Guide"
+    url: /markdown/
  
       
 
   # - title: "CV"
   #   url: /cv-json/
     
-#  - title: "Guide"
-#    url: /markdown/
