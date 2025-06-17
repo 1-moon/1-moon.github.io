@@ -7,6 +7,7 @@ permalink: /studying/rBST
 date: 2025-06-10
 # location: "City, Country"
 ---
+{% include toc %}
 
 Recursive Binary Search Tree\
 Requirement: [이진탐색트리(Binary Search Tree)](BST.md) 
