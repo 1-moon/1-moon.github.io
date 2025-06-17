@@ -97,15 +97,16 @@ note) Stereo camera를 이용하여 Disparity Map 깊이 추정하는 방법이 
 </div>
 
 요양원 환경에서는 단순한 이동뿐만 아니라 **어르신과의 상호작용**이 중요한 역할을 한다. 따라서 **대화 기능**을 추가하도록 노력하였다. 
-처음 구상은 Pre-trained 된 ollma or deepseek같은 모델을 활용하여 요양원 환경에 최적화된 Fine-tuned 모델 사용과 RAG를 적용시켜 단순한 AI응답 말고, 실제 요양원 시간표 및 생활 정보와 연계하여 반응하도록 하려고 했다. 하지만 크게 아래와 같은 제약들이 있었음.\
-- HW 성능 제한, 3060 6GB laptop GPU를 사용하다 보니 QLORA를 활용한 모델 학습 자체도 돌아가지 못했음\
+처음 구상은 Pre-trained 된 ollma or deepseek같은 모델을 활용하여 요양원 환경에 최적화된 Fine-tuned 모델 사용과 RAG를 적용시켜 단순한 AI응답 말고, 실제 요양원 시간표 및 생활 정보와 연계하여 반응하도록 하려고 했다. 하지만 크게 아래와 같은 제약들이 있었음.
+- HW 성능 제한, 3060 6GB laptop GPU를 사용하다 보니 QLORA를 활용한 모델 학습 자체도 돌아가지 못했음
 - 데이터 부족 및 전처리, 어르신과의 충분한 대화 데이터가 필요하지만 많이 없었고, 기본 대화 조차도 전처리를 했어야 하다보니 시간상 여유가 없었음.
 
-이런 제약을 고려해서 차선책이었던, API를 적극활용하기로 하였음.\
+이런 제약을 고려해서 차선책이었던, API를 적극활용하기로 하였음.
 - STT (Google Cloud Speech API): 실시간 음성 인식을 활용해 노인의 말을 받아들이고
 - LLM (OpenAI API) with context history: 문맥을 이해하고 감정을 반영하여 GPT 기반 응답을 생성
 - TTS (Google Text-to-Speech API): 생성된 응답을 음성으로 변환하여 전달
 특히 LLM 같은 경우 대화 문맥을 이해하고 답변을 해야하기에 Json 파일로 이전 대화 histroy 를 축적하도록 구현을 하였고, Prompt를 작성하여 요양원 환경에 맞게 커스텀마이징을 하였음.
-ROS 통신을 통해 PC가 아닌 로봇을 활용해야 하다 보니 LLM 을 PC 서버쪽으로 돌리고 STT와 TTS를 로봇쪽에서 처리하도록 구현하였음.\
+ROS 통신을 통해 PC가 아닌 로봇을 활용해야 하다 보니 LLM 을 PC 서버쪽으로 돌리고 STT와 TTS를 로봇쪽에서 처리하도록 구현하였음.
+
 Reference: https://github.com/Auromix/ROS-LLM/tree/ros2-humble 
 
