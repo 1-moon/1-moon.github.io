@@ -8,6 +8,8 @@ date: 2025-06-15
 # location: "City, Country"
 ---
 
+{% include toc %}
+
 Binary Search Tree\
 Requirement: [연결리스트(Linked list)](LinkedList.md) 
 
