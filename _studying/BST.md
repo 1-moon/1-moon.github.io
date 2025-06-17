@@ -7,7 +7,6 @@ permalink: /studying/BST
 date: 2025-06-15
 # location: "City, Country"
 ---
-
 {% include toc %}
 
 Binary Search Tree\
