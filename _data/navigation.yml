@@ -20,8 +20,8 @@ main:
   - title: "Studying"
     url: /studying/
     
-  - title: "Fundamentals"
-    url: /talks/ 
+#  - title: "Fundamentals"
+#    url: /talks/ 
 #  - title: "Publications"
  #   url: /publications/
 #  - title: "Guide"
