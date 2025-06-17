@@ -18,11 +18,12 @@ main:
     url: /year-archive/
   
   - title: "Studying"
-    url: /studying/    
-  - title: "Talks"
+    url: /studying/
+    
+  - title: "Fundamentals"
     url: /talks/ 
-  - title: "Publications"
-    url: /publications/
+#  - title: "Publications"
+ #   url: /publications/
   - title: "Guide"
     url: /markdown/
  
