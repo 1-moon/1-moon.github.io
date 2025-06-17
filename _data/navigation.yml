@@ -19,15 +19,15 @@ main:
   
   - title: "Studying"
     url: /studying/    
-  
+  - title: "Talks"
+    url: /talks/ 
+      
 
 #  - title: "Publications"
 #    url: /publications/
  
       
-#  - title: "Talks"
-#   url: /talks/ 
-    
+
   # - title: "CV"
   #   url: /cv-json/
     
