@@ -7,6 +7,14 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.studying reversed %}
-  {% include archive-single.html %}
+{% assign types = site.studying | map: "type" | uniq %}
+
+{% for type in types %}
+  <h2>{{ type }}</h2>
+  <ul>
+    {% assign filtered_posts = site.studying | where: "type", type %}
+    {% for post in filtered_posts reversed %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 {% endfor %}
