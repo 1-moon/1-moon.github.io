@@ -88,7 +88,23 @@ call stack에 들어간 30은 반환된 True로 인하여 다시 빠져나오게
         return True 
 ```
 
-
-
 Insert
- ======
+======
+`r_contain`와 큰 차이점은 `r_insert`은 return statement를 반환하지 않기 때문에 약간 다르다. 
+```
+    def __r_insert(self, current_node, value):
+
+    def r_insert(self, value):
+        self.__r_insert(self.root, value)
+
+    def r_contain(self, value):
+        return self.__r_contain(self.root, value)
+```
+return 을 반환하지 않는 다면 어떤점이 contain과 다른지 살펴보자.\
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/0e489ca4-16b0-4b4c-a9aa-53c81b9de199" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/c1c74940-1056-4648-895b-82fcff6845cb" />
+우선 위 그림과 같이 root instance 를 call stack에 넣고 시작하면, 
+```
+    def __r_insert
+```
+
