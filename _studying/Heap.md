@@ -2,7 +2,7 @@
 title: "Heap(엉덩이는 hip)"
 collection: studying
 type: "Data Structure"
-permalink: /studying/heap
+permalink: /studying/Heap
 # venue: "Home"
 date: 2025-06-18
 # location: "City, Country"
