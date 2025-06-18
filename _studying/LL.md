@@ -27,3 +27,5 @@ Linked List는 기본적으로 index가 없습니다.\
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/5ac888aa-1716-4e3d-a623-33584800924a" />
 
 
+Big O
+======
