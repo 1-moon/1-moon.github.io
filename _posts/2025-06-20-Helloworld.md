@@ -84,7 +84,7 @@ compiler에 대해서 더 자세한 article은 [여기](2025-06-20-Compiler)를 
 
 ![image](https://github.com/user-attachments/assets/bb0d15ed-f1f8-451c-b09f-ae73dd6d876f)
 
-#### Using namespace std;
+### Using namespace std;
 C++는 `std`라는 namespace를 통해 `cout`, `cin`, `string` 같은 표준 기능들을 구성하고 관리합니다.\
 C++에서의 namespace는 변수나 함수 그리고 클래스와 같은 것들을 하나의 이름안에서 그룹화하는 역학을 하죠.\
 한마디로 이름의 혼동을 줄이기 위해 일종의 폴더를 만들어 안에 넣어서 관리한다고 생각하시면 됩니다.\
@@ -96,7 +96,7 @@ C++에서의 namespace는 변수나 함수 그리고 클래스와 같은 것들�
 ```
   cout << "Hello, World!";
 ```
-#### `std` for only beginner ? 
+### `std` for only beginner ? 
 `std`를 쓰는건 정말 편리합니다. 하지만... 실제 큰 프로젝트에서는 사용을 권장하지는 않습니다. 이유는 아래와 같아요.
 - `std` namespace는 정말 많은 이름들을 가지고 있습니다.
 - 사용자가 작성한 변수, 함수, 라이브러리는 같은 이름을 사용함으로써 **충돌(conflict)**를 발생시킬 위험이 있습니다.
@@ -104,11 +104,11 @@ C++에서의 namespace는 변수나 함수 그리고 클래스와 같은 것들�
 따라서 `std::`를 직접 쓰는게 권장됩니다. 특히 개인이 아닌 큰 프로젝트에서는 더더욱..!
 > Explicit. Clear. Safe.
 
-#### int main(){...}
+### int main(){...}
 위 소제목은 C++ 프로그램의 시작점이라 볼 수 있습니다.
 `main`함수는 항상 프로그램이 시작될때 첫번째로 시작되는 컴파일됩니다. 
 
-#### cout << "Hello, World!";
+### cout << "Hello, World!";
 이것은 screen상에 출력문입니다.
 - `cout`은 콘솔결과를 의미합니다.
 - `<<`은 삽입 연산자(insertion operator)입니다. 즉, 문자열을 cout에 보내는 역할을 하죠
@@ -125,7 +125,7 @@ C++에서의 namespace는 변수나 함수 그리고 클래스와 같은 것들�
   stdout (console screen)
 ```
 
-#### return 0;
+### return 0;
 이것은 main 함수의 끝이며 OS에게 이 프로그램이 성공적으로 끝냈다라는 것을 말해줍니다.\
 ![image](https://github.com/user-attachments/assets/c2fbd808-43b4-4dc4-b08b-1373f8b65093)
 
