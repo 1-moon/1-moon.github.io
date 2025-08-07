@@ -120,6 +120,21 @@ Batch size 32는 64로 하기엔 메모리 부담이 있었고, 16은 학습에 
   </tr>
 </table>
 
+### UDP 통신 
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2f38f12a-7a88-4979-b8a9-bf0094fb05de" width="300"/>
+</div>
+
+
+영상 데이터 전달 위한 통신
+- Nuribot -> AI Server
+  - Human Following 기능을 위한 후방 카메라 영상 전송
+  - Fire, Fall Detection 기능을 위한 전방 카메라 영상 전송
+- Nuri Controller -> Nurse GUI
+  - GUI 화면에서 실시간으로 볼 수 있도록 전방 카메라 영상 전송
+
+
 ## 정서적 대화
 
 <div align="center">
@@ -147,7 +162,7 @@ Batch size 32는 64로 하기엔 메모리 부담이 있었고, 16은 학습에 
 Prompt를 작성하여 요양원 환경에 맞게 커스텀마이징을 하였음.\
 ROS 통신을 통해 PC가 아닌 로봇을 활용해야 하다 보니 LLM 을 PC 서버쪽으로 돌리고 STT와 TTS를 로봇쪽에서 처리하도록 구현하였음.
 
-### 통신 구조 
+### Ros 통신 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/9eee537d-94fa-4251-b2af-86c9850caa49" width="500"/>
 </div>
