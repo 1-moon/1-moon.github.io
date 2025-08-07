@@ -6,6 +6,9 @@ collection: portfolio
 
 Project period: 2025.04 ~ 2025.05
 link: [요양보호사 보조 로봇](https://github.com/1-moon/ros-careGiver/tree/main)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/885951dd-7ec7-4e69-9baa-d252f889d720" width="500" />
+</div>
 
 본 프로젝트는 요양원을 배경으로, ROS(Robot OS)를 활용한 주행로봇이 요양보호사의 업무를 어떻게 보조할 수 있는지를 탐구하는 것을 목적으로 진행되었습니다.
 제가 맡은 파트는 AI를 적극활용한 로봇의 기능구현 담당으로서, 어르신의 산책 보조와 순찰 및 정서적대화를 구현을 했었고, 기타 트러블 슈팅 및 디버깅을 함께 진행했었습니다.
@@ -112,8 +115,8 @@ Batch size 32는 64로 하기엔 메모리 부담이 있었고, 16은 학습에 
 
 <table>
   <tr>
-    <td width="50%"><img src="https://github.com/user-attachments/assets/89d78db5-605f-43a2-9ada-84af036f3ae8"><br></td>
-    <td width="50%"><img src="https://github.com/user-attachments/assets/f6a6820b-fec3-4e08-af06-8d63b886479b"><br></td>
+    <td width="30%"><img src="https://github.com/user-attachments/assets/89d78db5-605f-43a2-9ada-84af036f3ae8"><br></td>
+    <td width="30%"><img src="https://github.com/user-attachments/assets/f6a6820b-fec3-4e08-af06-8d63b886479b"><br></td>
   </tr>
 </table>
 
@@ -123,32 +126,42 @@ Batch size 32는 64로 하기엔 메모리 부담이 있었고, 16은 학습에 
   <iframe src="https://drive.google.com/file/d/11CfjPYbVZIDjEtyWtSgoaH126BffTP9d/preview" width="640" height="360" allow="autoplay"></iframe>
 </div>
 
-요양원 환경에서는 단순한 이동뿐만 아니라 **어르신과의 상호작용**이 중요한 역할을 한다. 따라서 **대화 기능**을 추가하도록 노력하였다. 
-처음 구상은 훈련된 ollma 혹은 deepseek같은 모델을 활용하여 요양원 환경에 최적화된 모델 사용과 RAG를 적용시켜 단순한 AI응답이 아닌, 실제 요양원 시간표 및 생활 정보와 연계하여 반응하도록 하려고 했었지만,\
+요양원 환경에서는 단순한 이동뿐만 아니라 **어르신과의 상호작용**이 중요한 역할을 한다. 따라서 **대화 기능**을 추가하도록 노력하였음. \
+처음 구상은 훈련된 ollma 혹은 deepseek같은 모델을 활용하여 요양원 환경에 최적화된 모델 사용과 RAG를 적용시켜 단순한 AI응답이 아닌, 실제 요양원 시간표 및 생활 정보와 연계하여 반응하도록 시도했었음 하지만,\
 크게 아래와 같은 제약들이 있었음.
 - HW 성능 제한, 3060 6GB laptop GPU를 사용하다 보니 QLORA를 활용한 모델 학습 자체도 돌아가지 못했음
 - 데이터 부족 및 전처리, 어르신과의 충분한 대화 데이터가 필요하지만 많이 없었고, 기본 대화 조차도 전처리를 했어야 하다보니 시간상 여유가 없었음.
 
 이런 제약을 고려해서 차선책이었던, API를 적극활용하기로 하였음.
+
+### LLM 구축 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/db09ec13-7a91-44ba-997b-cf49cdecbb66" width="300"/>
+</div>
+
 - STT (Google Cloud Speech API): 실시간 음성 인식을 활용해 노인의 말을 받아들이고
 - LLM (OpenAI API) with context history: 문맥을 이해하고 감정을 반영하여 GPT 기반 응답을 생성
 - TTS (Google Text-to-Speech API): 생성된 응답을 음성으로 변환하여 전달
-특히 LLM 같은 경우 대화 문맥을 이해하고 답변을 해야하기에 Json 파일로 이전 대화 histroy 를 축적하도록 구현을 하였고, Prompt를 작성하여 요양원 환경에 맞게 커스텀마이징을 하였음.
+  
+대화를 하기 위해서는 이전 문맥을 이해하고 답변을 해야하기에 Json 파일로 이전 대화 histroy 를 축적하도록 구현을 하였음.\
+Prompt를 작성하여 요양원 환경에 맞게 커스텀마이징을 하였음.\
 ROS 통신을 통해 PC가 아닌 로봇을 활용해야 하다 보니 LLM 을 PC 서버쪽으로 돌리고 STT와 TTS를 로봇쪽에서 처리하도록 구현하였음.
 
-
+### 통신 구조 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/db09ec13-7a91-44ba-997b-cf49cdecbb66" width="500"/>
+  <img src="https://github.com/user-attachments/assets/9eee537d-94fa-4251-b2af-86c9850caa49" width="500"/>
 </div>
+
+STT, LLM, TTS 각각을 하나의 노드로 작성하여 ROS2의 Topic 기반 통신을 통해 유기적으로 작동하도록 시도했음.\
+전체 시스템 flow를 큰 틀에서 살펴보자면
+1. 사용자 음성 (trigger_word)
+2. STTNode: stt로 음성->text (input topic 발행)
+3. LLMNode: (input topic 구독) LLM 처리 및 OpenAI 연동 -> text 반환 (feedback topic 발행)
+4. TTSNode: (feedback topic 구독) text -> 음성 반환 
+
+> llm_state를 통해 현재 상황을 노드 간의 공유(e.g. 'listening', 'processing', 'speaking')
 
 Reference: https://github.com/Auromix/ROS-LLM/tree/ros2-humble 
 
 
-## Trouble shooting 
-
-### SLAM 기반 자율주행 중, 로봇의 위치 추정이 점차 틀어지는 현상 
-
-실제로는 벽과의 거리가 충분함에도, LiDAR 스캔 상에서는 벽 안에 로봇이 위치하거나 장애물과 겹치는 현상 계속 발생하였음. 
-
-  
 
