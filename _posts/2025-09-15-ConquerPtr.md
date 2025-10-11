@@ -24,14 +24,38 @@ When we assign a value to a variable, the value is stored in the allocated memor
   <img src="https://github.com/user-attachments/assets/fab7fb2f-f046-47e5-9f3d-a5355a528260" width="300" />
 </p>
 
+## Pointer is a 'Variable'
 
-## A way to store the memory address of a variable
+A pointer is a **variable** that stores the memory address of another variable.
+
+- All variables are stored in memory, and each byte of that memory has its own address.
+- A pointer variable is usually represented as an arrow rather than a number because the actual memory address can vary depending on the system 
+- Memory is made up of bytes, and each byte is assigned a unique address in sequential order.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/93f2c877-42f2-428d-bce4-9d727a16ec0c" width="300" />
+</p>
 
 ```C++
-  int  p = 10;  // Memory is allocated for p, and 10 is stored in that memory. 
-  int  *ptr;    // Declaring a pointer that can store a memory address. 
-  ptr = &p;
-  cout << ptr; 
+  int  a = 100;  // Memory is allocated for a, and 100 is stored in that memory. 
+  int  *p;    // Declaring a pointer that can store a memory address. 
+  p = &a;
+  cout << p; 
 ```
+
+- The address of a variable can be extracted by **address-of operator(&)** 
+  - & operator : address-of operator
+  - * operator : dereference operator
+
+### Summary for this concept 
+```C++
+  int a; // integer variable
+  p =&a; // store address of variable into pointer 
+```
+
+```C++
+*p = 200;  // Dereference operator (*) stores 200 at the address pointed to by the pointer.
+```
+> *p and a refer to the same memory location - in other words, they are essentially the same. 
+>In nutshell, modifying *p also modifies a, since they share the same memory address. 
 
 
