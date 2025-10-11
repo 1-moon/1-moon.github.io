@@ -44,7 +44,7 @@ A pointer is a **variable** that stores the memory address of another variable.
 
 - The address of a variable can be extracted by **address-of operator(&)** 
   - & operator : address-of operator
-  - * operator : dereference operator
+  - \* operator : dereference operator
 
 ### Summary for this concept 
 ```C++
