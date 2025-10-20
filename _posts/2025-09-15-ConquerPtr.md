@@ -1,4 +1,4 @@
----
+
 title: 'Conquer pointer'
 date: 2025-09-15
 permalink: /posts/2025/09/ConquerPtr/
@@ -112,9 +112,10 @@ If you think it might be null, then pass it as a pointer.
 
 ## Handling `nullptr` in pointers
 When using pointers, there's always a risk that might not point to a valid memory location.\
-If you try to dereference a `nullptr`(a pointer that doesn't point to anything), your program may crash or exhibit undefined behavior.\
+If you try to dereference a `nullptr`(a pointer that doesn't point to anything), your program always exhibits undefined behavior.\
 
 To prevent this, always check if a pointer is `nullptr` before dereferencing it:
+
 ```C++
   void  update(int *p){
     if (p == nullptr) return; // Avoid dereferencing a null pointer
@@ -122,5 +123,8 @@ To prevent this, always check if a pointer is `nullptr` before dereferencing it:
   }
 ```
 
+## Final Thoughts
+Pointers are tricky, but once you understand memory addresses and references, they become powerful tools for optimizing code.
 
-## Array and Pointer
+Whether you’re managing dynamic memory, passing large objects efficiently, or working with data structures like linked lists, pointers are essential in C++.
+
