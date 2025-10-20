@@ -16,7 +16,7 @@ I think working with diagrams might help me understand it better!
 When declaring a variable, memory gets allocated for it.\
 When we assign a value to a variable, the value is stored in the allocated memory.
 
-```C++
+```
   int p;   // memory is allocated for p, but it contains a garbage value initially
   p = 10;  // The value at p's memory address is updated to 10
 ```
@@ -35,7 +35,7 @@ A pointer is a **variable** that stores the memory address of another variable.
   <img src="https://github.com/user-attachments/assets/93f2c877-42f2-428d-bce4-9d727a16ec0c" width="500" />
 </p>
 
-```C++
+```
   int  a = 100;  // Memory is allocated for a, and 100 is stored in that memory. 
   int  *p;    // Declaring a pointer that can store a memory address. 
   p = &a;
@@ -47,12 +47,12 @@ A pointer is a **variable** that stores the memory address of another variable.
   - \* operator : dereference operator
 
 ### Summary for this concept 
-```C++
+```
   int a; // integer variable
   p =&a; // store address of variable into pointer 
 ```
 
-```C++
+```
 *p = 200;  // Dereference operator (*) stores 200 at the address pointed to by the pointer.
 ```
 > *p and a refer to the same memory location - in other words, they are essentially the same. 
@@ -63,7 +63,7 @@ A pointer is a **variable** that stores the memory address of another variable.
 ## Pass by pointer 
 Pointers can be parameters in a function.
 
-```C++
+```
   void update(int *p){
     *p = 20; 
   }
@@ -89,7 +89,8 @@ The pointer variable `p` has its own memory address.
 ## Pass by Reference (Alternative to Pointer)
 
 C++ allows you to pass variables by reference, unlike C. This is similar to using pointers, but cleaner.
-```C++
+
+```
   void update(int &r){
     r = 20; 
   }
@@ -116,7 +117,7 @@ If you try to dereference a `nullptr`(a pointer that doesn't point to anything),
 
 To prevent this, always check if a pointer is `nullptr` before dereferencing it:
 
-```C++
+```
   void  update(int *p){
     if (p == nullptr) return; // Avoid dereferencing a null pointer
     *p = 4; // Safe to modify the value now
