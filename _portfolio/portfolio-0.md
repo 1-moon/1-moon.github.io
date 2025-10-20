@@ -7,5 +7,13 @@ collection: portfolio
 Project period: 2025.06 ~ 2025.10
 link: [StoryTeller](https://github.com/ING-First)
 <div align="center">
-  <img src="https://www.youtube.com/watch?v=IhlMm7Sdbdo" width="500" />
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/IhlMm7Sdbdo"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
 </div>
+
+[![StoryTeller_youtube](https://img.youtube.com/vi/IhlMm7Sdbdo/0.jpg)](https://www.youtube.com/watch?v=IhlMm7Sdbdo)
