@@ -15,5 +15,3 @@ link: [StoryTeller](https://github.com/ING-First)
     allowfullscreen>
   </iframe>
 </div>
-
-[![StoryTeller_youtube](https://img.youtube.com/vi/IhlMm7Sdbdo/0.jpg)](https://www.youtube.com/watch?v=IhlMm7Sdbdo)
