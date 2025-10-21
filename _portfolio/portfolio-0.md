@@ -4,6 +4,7 @@ excerpt: "아이맞춤형 AI 동화 생성 및 리딩 서비스<br/><img src='ht
 collection: portfolio
 ---
 
+## Overview
 Project period: 2025.06 ~ 2025.10
 link: [StoryTeller](https://github.com/ING-First)
 <div align="center">
@@ -15,13 +16,43 @@ link: [StoryTeller](https://github.com/ING-First)
     allowfullscreen>
   </iframe>
 </div>
+</br>
 
-본 프로젝트는 2025 오픈소스 개발자대회 참가 출전작으로 AI(LLM & Stable diffusion)를 활용한 교육용 서비스를 오픈소스로 만들고자 참여하게 되었음.\
-나의 역할:  서비스 기획과 FE-BE 설계 및 개발 그리고 LLM tuning support. 
+2025 오픈소스 개발자대회 참가 출전작으로 AI(LLM & Stable diffusion)를 활용한 교육용 서비스를 오픈소스로 만들고자 참여하게 되었음.
 
-## 기획 
+</br>
+<p align="center">
+  <a href="">Presentation</a>
+</p>
+
+## Abstract
 <img src="https://github.com/user-attachments/assets/dce256df-6293-43b5-91fb-2f0edafbc3a5" width="300" style="display:inline-block; margin-right:10px;">
-<img src="https://github.com/user-attachments/assets/3f62efa3-879b-4ff1-97f9-d5a6fab1ef80" width="600" style="display:inline-block;">
+<img src="https://github.com/user-attachments/assets/3f62efa3-879b-4ff1-97f9-d5a6fab1ef80" width="500" style="display:inline-block;">
 
 공모전에 참여하기 위해서 자유과제, 지정과제, 지속발전과제 등 3개의 유형 중 하나를 선택해야만 했었음.\
-팀원 모두가 AI를 활용한 프로젝트를 진행하
+AI를 최대한 활용하는 프로젝트를 진행하고자 자유과제를 선정.\
+
+서비스 'StoryTeller'를 통해..
+- 자유롭게 이야기 구성을 설정할 수 있음,
+- AI는 이에 적합하고 참신한 애니메이션, 이미지, 등장인물, 텍스트, 음성 등의 멀티미디어 동화 콘텐츠를 생성
+- 누구나 동화 속 무대의 관객이자 감독이 될 수 있는 새로운 창작·감상 경험을 제공함으로써, 창의적 상호작용형 스토리텔링의 가능성을 확대
+
+## Design
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0dc25a98-6a86-4b56-920d-553bd3171e67" width="500">
+</p>
+
+서비스를 제공하기 위해서는 web 기반 UI를 선택 하였음\ 
+**FE: React + TypeScript 기반 환경**\
+
+팀원 모두 공통적으로 주 개발 언어는 Python이었기 때문에 Fastapi framework를 이용\  
+**BE: FastAPI(Python), exposed via ngrok** 
+
+AI 모델 학습 
+
+## Contribution 
+
+
+
+
