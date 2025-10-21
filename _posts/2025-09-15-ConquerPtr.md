@@ -1,4 +1,4 @@
-
+---
 title: 'Conquer pointer'
 date: 2025-09-15
 permalink: /posts/2025/09/ConquerPtr/
