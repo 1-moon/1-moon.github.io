@@ -1,6 +1,6 @@
 ---
 title: "StoryTeller"
-excerpt: "아이맞춤형 AI 동화 생성 및 리딩 서비스<br/><img src='https://github.com/user-attachments/assets/851905e1-ff2e-48bb-833d-d3b423e2bc0a' width='300' height='100'>"
+excerpt: "아이맞춤형 AI 동화 생성 및 리딩 서비스<br/><img src='https://github.com/user-attachments/assets/8a5c0e1a-0edd-49b6-8582-80fb7d6528c9' width='300' height='100'>"
 collection: portfolio
 ---
 
@@ -43,15 +43,13 @@ AI를 최대한 활용하는 프로젝트를 진행하고자 자유과제를 선
   <img src="https://github.com/user-attachments/assets/0dc25a98-6a86-4b56-920d-553bd3171e67" width="500">
 </p>
 
-- FE \ 
-**FE: React + TypeScript 기반 환경**\
-
-
-
 | Tech Stack | Framework | Description |
 |----|-----|-----|
 | FE | React + TypeScript 기반 환경 |  서비스를 제공하기 위해서는 web 기반 UI를 선택 하였음 | 
 | BE | FastAPI(Python), exposed via ngrok | 팀원 모두 공통적으로 주 개발 언어는 Python이었기 때문에 Fastapi framework를 이용.\ 온라인으로 개발을 하다보니 서버를 외부와 연결이 필수적이라 ngrok 사용.| 
+| DB | AWS RDS with MySQL | AWS 사용에 매우 익숙 |
+| AI | Fine-tuned LLM foundation model | 동화 생성, 평가, 요약을 위해 QLoRA & LoRA 시행 | 
+| Image AI | Fine-tuned stable diffusion model | 동화 삽화 생성 | 
 
 
 ## Contribution 
