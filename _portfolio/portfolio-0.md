@@ -54,6 +54,9 @@ AI를 최대한 활용하는 프로젝트를 진행하고자 자유과제를 선
 
 ## Contribution 
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/740e6a55-373c-455c-aebb-ea5f24beadc8" width="500">
+</p>
 
 
 
