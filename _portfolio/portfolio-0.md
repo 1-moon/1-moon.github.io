@@ -16,11 +16,9 @@ link: [StoryTeller](https://github.com/ING-First)
     allowfullscreen>
   </iframe>
 </div>
-</ br>
 
 2025 오픈소스 개발자대회 참가 출전작으로 AI(LLM & Stable diffusion)를 활용한 교육용 서비스를 오픈소스로 만들고자 참여하게 되었음.
 
-</ br>
 <p align="center">
   <a href="https://docs.google.com/presentation/d/1K7izor5Px3n0uWPPXWq2igYqOLvkR59O/edit?usp=sharing&ouid=113099810683180168409&rtpof=true&sd=true">Presentation</a>
 </p>
